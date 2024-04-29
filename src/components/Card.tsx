@@ -15,8 +15,12 @@ export function Card(props: {
       <h1 className="font-semibold text-xl dark:text-white">{props.title}</h1>
       <p className="dark:text-gray-300 text-sm">{props.description}</p>
       <div className="flex flex-wrap w-full mt-2 gap-2">
-        {props.tags.map((tag) => {
-          return <Badge className="text-sm">{tag}</Badge>;
+        {props.tags.map((tag, ind) => {
+          return (
+            <Badge key={ind} className="text-sm">
+              {tag}
+            </Badge>
+          );
         })}
       </div>
       {props.githubName && (
