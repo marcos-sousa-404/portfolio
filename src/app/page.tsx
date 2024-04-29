@@ -47,27 +47,10 @@ export default function Home() {
 
       <main className="w-full h-full flex flex-col">
         <div className="mt-16"></div>
-        <section className="flex w-full sm:flex-row flex-col items-center my-10">
-          <div className="mx-auto sm:ml-8 sm:mr-0">
-            <Badge>Boas vindas! 👋</Badge>
-
-            <h1 className="font-bold text-[2.5rem] sm:text-5xl dark:text-white duration-300">
-              Marcos Sousa
-            </h1>
-            <h2 className="dark:text-white duration-300">
-              Desenvolvedor Web e Mobile
-            </h2>
-          </div>
-          <img
-            className="rounded-full mx-auto sm:mb-auto sm:ml-10 sm:mr-8 h-56 sm:h-72 mt-5 sm:mt-0 shadow-lg shadow-[#9993]"
-            src="foto.png"
-          />
-        </section>
-        <hr className="solid block border-b-[0.5] border-gray-500 w-4/5 mx-auto" />
         <section className="flex sm:flex-row flex-col w-full my-10">
           <img
             className="rounded-full mx-auto sm:ml-8 mb-4 sm:my-auto h-56 sm:h-72 shadow-lg shadow-[#9993]"
-            src="foto 2.png"
+            src="foto.png"
           />
           <div className="mx-auto sm:ml-4">
             <div className="w-10/12 sm:w-full mx-8 sm:ml-0">
@@ -77,7 +60,10 @@ export default function Home() {
               Marcos Paulo
               <br /> da Silva Sousa
             </h1>
-            <ul className="w-10/12 mx-8 sm:mx-0 md:1/2 dark:text-white text-md mt-2">
+            <h2 className="dark:text-white font-medium mx-8 sm:mx-0 w-10/12 sm:w-full duration-300">
+              Desenvolvedor Web e Mobile
+            </h2>
+            <ul className="w-10/12 mx-8 sm:mx-0 md:w-2/3 dark:text-white text-md mt-2">
               <li>
                 📖 Estudante do 3º Ano Técnico em Informática da EEEP Edson
                 Queiroz.
