@@ -14,7 +14,7 @@ export default function Home() {
       ? setDark(true)
       : setDark(false);
   }, []);
-  if (document) {
+  if (typeof window !== "undefined") {
     if (dark) {
       document.body.classList.add("dark");
     } else {
