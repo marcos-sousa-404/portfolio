@@ -14,10 +14,12 @@ export default function Home() {
       ? setDark(true)
       : setDark(false);
   }, []);
-  if (dark) {
-    document.body.classList.add("dark");
-  } else {
-    document.body.classList.remove("dark");
+  if (document) {
+    if (dark) {
+      document.body.classList.add("dark");
+    } else {
+      document.body.classList.remove("dark");
+    }
   }
 
   return (
