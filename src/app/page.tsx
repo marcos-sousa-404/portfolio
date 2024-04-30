@@ -111,7 +111,7 @@ export default function Home() {
             </h1>
             <div className="mt-4 grid grid-cols-1 pb-4 sm:pb-0 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
               <Card
-                title="CorrAut 2022"
+                title="CorrAut - 2022"
                 description="Criação de um sistema desktop para a correção automática de gabaritos baseado no método da Cascata de Haar. Projeto vencedor da área de TICs da XIII feira de ciências e cultura da EEEP Edson Queiroz."
                 tags={["Python", "OpenCV", "Pillow", "PyQt6"]}
                 githubName="CorrAut-Antigo"
@@ -129,7 +129,7 @@ export default function Home() {
                 githubName="ProjetoCifra"
               />
               <Card
-                title="CorrAut 2023"
+                title="CorrAut - 2023"
                 description="Sistema que automatiza a correção de gabaritos e monitora a frequência dos estudantes por meio de um website e um aplicativo móvel. Vencedor da área de TICs da XIV feira de ciências e cultura da EEEP Edson Queiroz."
                 tags={[
                   "HTML / CSS / JS",
@@ -154,8 +154,14 @@ export default function Home() {
                 githubName="Corretor"
               />
               <Card
+                title="Formulário automatizado para prestação de contas"
+                description="Sistema feito para automatizar a prestação de contas de uma rifa virtual. Gera cartelas e uma planilha de visualização atualizada em tempo real."
+                tags={["Python", "Flask", "Pillow", "gspread", "Apps Script"]}
+                githubName="RifasInfor"
+              />
+              <Card
                 title="Weather Web App"
-                description="Aplicação de previsão do clima simples, feita para aprender svelte. Mostra os dados do clima atual da cidade escolhida, além de previsões para os próximos horários e 7 dias da semana."
+                description="Aplicação de previsão do clima simples. Mostra os dados do clima atual da cidade escolhida, além de previsões para os próximos horários e dias da semana."
                 tags={[
                   "TS",
                   "Svelte",
