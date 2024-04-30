@@ -65,7 +65,7 @@ export default function Home() {
         <section className="flex sm:flex-row flex-col w-full my-10">
           <img
             className="rounded-full mx-auto sm:ml-8 mb-4 sm:my-auto h-56 sm:h-72 shadow-lg shadow-[#9993]"
-            src="foto.png"
+            src="foto 2.png"
           />
           <div className="mx-auto sm:ml-4">
             <div className="w-10/12 sm:w-full mx-8 sm:ml-0">
