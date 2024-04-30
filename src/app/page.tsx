@@ -2,23 +2,30 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faInstagram, faGithub } from "@fortawesome/free-brands-svg-icons";
 import { faMoon, faSun } from "@fortawesome/free-solid-svg-icons";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Badge } from "@/components/Badge";
 import { Card } from "@/components/Card";
 
 export default function Home() {
   const [dark, setDark] = useState(false);
 
-  const darkModeHandler = () => {
-    setDark(!dark);
-    document.body.classList.toggle("dark");
-  };
+  useEffect(() => {
+    window.matchMedia("(prefers-color-scheme: dark)")
+      ? setDark(true)
+      : setDark(false);
+  }, []);
+  if (dark) {
+    document.body.classList.add("dark");
+  } else {
+    document.body.classList.remove("dark");
+  }
+
   return (
     <div className="bg-white dark:bg-black w-full h-full duration-300">
       <header className="shadow-lg bg-white dark:bg-black duration-300 transition-all w-full z-10 shadow-[#9993] h-16 flex fixed">
         <button
-          onClick={() => darkModeHandler()}
-          className="rounded-md h-9 w-9 my-auto ml-4 hover:scale-105 translate-y-0.5 duration-300 transition-all"
+          onClick={() => setDark(!dark)}
+          className="rounded-md  text-2xl h-9 w-9 my-auto ml-4 hover:scale-105 translate-y-0.5 duration-300 transition-all"
         >
           <FontAwesomeIcon
             className="text-gray-600 dark:text-gray-200 h-6 m-auto duration-300"
@@ -31,7 +38,10 @@ export default function Home() {
             href="https://github.com/Maruquitus"
             className="font-medium text-sm text-gray-800 dark:text-gray-100 my-auto flex hover:scale-105 duration-300 cursor-pointer"
           >
-            <FontAwesomeIcon className="h-5 my-auto mr-1" icon={faGithub} />
+            <FontAwesomeIcon
+              className="h-5 text-xl my-auto mr-1"
+              icon={faGithub}
+            />
             Github
           </a>
           <a
@@ -39,7 +49,10 @@ export default function Home() {
             href="https://instagram.com/Maruquiturus"
             className="font-medium text-sm text-gray-800 dark:text-gray-100 my-auto flex hover:scale-105 duration-300 cursor-pointer"
           >
-            <FontAwesomeIcon className="h-5 my-auto mr-1" icon={faInstagram} />
+            <FontAwesomeIcon
+              className="h-5 text-xl my-auto mr-1"
+              icon={faInstagram}
+            />
             Instagram
           </a>
         </div>
