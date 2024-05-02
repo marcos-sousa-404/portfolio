@@ -27,7 +27,7 @@ export function Card(props: {
         <a
           target="_blank"
           href={`https://github.com/Maruquitus/${props.githubName}`}
-          className="mt-auto absolute bottom-4 right-4 w-[78] duration-300 hover:scale-105 cursor-pointer"
+          className="mt-auto absolute dark:bg-black bg-white rounded-full bottom-4 right-4 w-[78] duration-300 hover:scale-105 cursor-pointer"
         >
           <FontAwesomeIcon
             className="h-6 dark:text-white mt-auto float-right"

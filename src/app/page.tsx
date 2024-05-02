@@ -83,7 +83,10 @@ export default function Home() {
                 📖 Estudante do 3º Ano Técnico em Informática da EEEP Edson
                 Queiroz.
               </li>
-              <li>🧒 Apaixonado por programação desde o 7º ano.</li>
+              <li>
+                🧒 Apaixonado por programação desde o 7º ano do ensino
+                fundamental.
+              </li>
               <li>
                 🌐 Me identifico principalmente com desenvolvimento Web e
                 Mobile.
@@ -99,8 +102,17 @@ export default function Home() {
                 >
                   CorrAut
                 </a>
+                . Design de interfaces e front-end do site por{" "}
+                <a
+                  className="font-semibold"
+                  target="_blank"
+                  href="https://github.com/GuilhermePain"
+                >
+                  @GuilhermePain
+                </a>
                 .
               </li>
+              <li>✉️ Email para contato: marcospauloda.s.s@gmail.com.</li>
             </ul>
           </div>
         </section>
