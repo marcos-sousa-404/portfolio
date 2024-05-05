@@ -133,7 +133,7 @@ export default function Home() {
               <Card
                 title="Jogo Educativo de Verbos em Espanhol"
                 description="Aplicação com interface interativa focada em verbos espanhóis terminados em AR, oferecendo explicações sobre conjugações, pronomes pessoais e questões para prática."
-                tags={["HTML / CSS / JS", "Python", "Flask", "JSON"]}
+                tags={["HTML / CSS / JS", "Python", "Flask"]}
                 githubName="Trabalho-de-Espanhol"
               />
               <Card
@@ -163,12 +163,12 @@ export default function Home() {
               />
               <Card
                 title="Corretor"
-                description="Corretor automatizado de gabaritos de 20 questões padronizados, versão otimizada do corretor do CorrAut."
+                description="Corretor automatizado de gabaritos de 20 questões padronizados, versão otimizada do corretor do CorrAut. Configurado para capturar vídeo da webcam, detectar questões e alternativas, reconhecer respostas marcadas e compará-las com um gabarito predefinido."
                 tags={["Python", "Ultralytics"]}
                 githubName="Corretor"
               />
               <Card
-                title="Formulário automatizado para prestação de contas"
+                title="Formulário Automatizado para Prestação de Contas"
                 description="Sistema feito para automatizar a prestação de contas de uma rifa virtual. Gera cartelas e uma planilha de visualização atualizada em tempo real."
                 tags={["Python", "Flask", "Pillow", "gspread", "Apps Script"]}
                 githubName="RifasInfor"
@@ -190,6 +190,12 @@ export default function Home() {
                 description="Plataforma para a denúncia da infraestrutura precária de escolas. Os usuários podem criar reclamações que serão visualizadas no perfil da escola e na página inicial do site. "
                 tags={["TS", "React", "Node.js", "MongoDB", "Tailwind CSS"]}
                 githubName="escola-transparente"
+              />
+              <Card
+                title="Página de Login e Registro"
+                description="Aplicação simples com páginas de login e registro, feita para um teste técnico."
+                tags={["TS", "React", "Firebase", "Next.js", "Tailwind CSS"]}
+                githubName="login-e-registro"
               />
             </div>
           </div>
