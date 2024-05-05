@@ -26,6 +26,7 @@ export function Card(props: {
           );
         })}
       </div>
+      <div className="h-1 w-full" />
       <div className="mt-auto -mb-1">
         {props.githubName ? (
           <a

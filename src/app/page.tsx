@@ -163,7 +163,7 @@ export default function Home() {
               />
               <Card
                 title="Corretor"
-                description="Corretor automatizado de gabaritos de 20 questões padronizados, versão otimizada do corretor do CorrAut. Configurado para capturar vídeo da webcam, detectar questões e alternativas, reconhecer respostas marcadas e compará-las com um gabarito predefinido."
+                description="Corretor automatizado de gabaritos de 20 questões padronizados, versão otimizada do corretor do CorrAut. Configurado para capturar vídeo da webcam, reconhecer respostas marcadas e compará-las com um gabarito predefinido."
                 tags={["Python", "Ultralytics"]}
                 githubName="Corretor"
               />
