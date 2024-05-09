@@ -10,17 +10,30 @@ export default function Home() {
   const [dark, setDark] = useState(false);
 
   useEffect(() => {
-    window.matchMedia("(prefers-color-scheme: dark)")
-      ? setDark(true)
-      : setDark(false);
+    const prefersDarkMode = window.matchMedia("(prefers-color-scheme: dark)");
+
+    const handleDarkModeChange = (event: any) => {
+      setDark(event.matches);
+    };
+
+    setDark(prefersDarkMode.matches);
+
+    prefersDarkMode.addEventListener("change", handleDarkModeChange);
+
+    return () => {
+      prefersDarkMode.removeEventListener("change", handleDarkModeChange);
+    };
   }, []);
-  if (typeof window !== "undefined") {
-    if (dark) {
-      document.body.classList.add("dark");
-    } else {
-      document.body.classList.remove("dark");
+
+  useEffect(() => {
+    if (typeof window !== "undefined") {
+      if (dark) {
+        document.body.classList.add("dark");
+      } else {
+        document.body.classList.remove("dark");
+      }
     }
-  }
+  }, [dark]);
 
   return (
     <div className="bg-white dark:bg-black w-full h-full duration-300">
