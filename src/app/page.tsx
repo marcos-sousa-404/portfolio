@@ -1,6 +1,6 @@
 "use client";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faInstagram, faGithub } from "@fortawesome/free-brands-svg-icons";
+import { faLinkedin, faGithub } from "@fortawesome/free-brands-svg-icons";
 import { faMoon, faSun } from "@fortawesome/free-solid-svg-icons";
 import { useState, useEffect } from "react";
 import { Badge } from "@/components/Badge";
@@ -61,14 +61,14 @@ export default function Home() {
           </a>
           <a
             target="_blank"
-            href="https://instagram.com/Maruquiturus"
+            href="https://linkedin.com/in/marcos-sousa-39aaa6262/"
             className="font-medium text-sm text-gray-800 dark:text-gray-100 my-auto flex hover:scale-105 duration-300 cursor-pointer"
           >
             <FontAwesomeIcon
               className="h-5 text-xl my-auto mr-1"
-              icon={faInstagram}
+              icon={faLinkedin}
             />
-            Instagram
+            LinkedIn
           </a>
         </div>
       </header>
