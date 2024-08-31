@@ -1,20 +1,29 @@
 import { ReactNode } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub } from "@fortawesome/free-brands-svg-icons/faGithub";
-import { faLock } from "@fortawesome/free-solid-svg-icons";
+import { faLock, IconDefinition } from "@fortawesome/free-solid-svg-icons";
 import { Badge } from "./Badge";
 
 export function Card(props: {
-  children?: ReactNode;
   title: string;
   description: string;
   tags: string[];
+  icon: IconDefinition;
+  children?: ReactNode;
   githubName?: string;
 }) {
   return (
-    <div className="p-4 shadow-md border relative shadow-[#9993] w-[78] rounded-md flex flex-col">
+    <div className="p-4 shadow-md border border-purple-400 relative shadow-purple-500/10 w-[78] rounded-md flex flex-col">
       <div>
-        <h1 className="font-semibold text-xl dark:text-white">{props.title}</h1>
+        <div className="flex">
+          <FontAwesomeIcon
+            className="dark:text-white text-xl my-auto mr-2"
+            icon={props.icon}
+          />
+          <h1 className="font-semibold text-xl dark:text-white">
+            {props.title}
+          </h1>
+        </div>
         <p className="dark:text-gray-300 text-sm">{props.description}</p>
       </div>
       <div className="flex flex-wrap mt-2 gap-2">
