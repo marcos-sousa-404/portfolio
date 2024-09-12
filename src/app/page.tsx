@@ -16,10 +16,8 @@ import {
   faCloudSun,
   faSchool,
   faUser,
-  faInfoCircle,
   faMoon,
   faSun,
-  faCircleCheck,
   faDove,
 } from "@fortawesome/free-solid-svg-icons";
 import { useState, useEffect } from "react";
@@ -260,6 +258,21 @@ export default function Home() {
               />
             </div>
           </div>
+        </section>{" "}
+        <hr className="solid block border-b-[0.5] border-purple-400 w-4/5 mx-auto" />
+        <section className="flex w-full my-10">
+          <div className="mx-8">
+            <Badge className="">💬 Contato</Badge>
+            <h1 className="font-bold text-4xl dark:text-white duration-300">
+              Fale comigo!
+            </h1>
+          </div>
+          <form>
+            
+            <button>
+              Enviar
+            </button>
+            </form>
         </section>
       </main>
     </div>
