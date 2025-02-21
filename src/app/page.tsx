@@ -5,7 +5,7 @@ import { faMoon, faSun } from "@fortawesome/free-solid-svg-icons";
 import { useState, useEffect } from "react";
 import { Badge } from "@/components/Badge";
 import { Card } from "@/components/Card";
-import projects from "@/contants/projects";
+import projects from "@/constants/projects";
 
 export default function Home() {
   const [dark, setDark] = useState(false);
@@ -51,7 +51,7 @@ export default function Home() {
         <div className="ml-auto mr-4 my-auto flex gap-4">
           <a
             target="_blank"
-            href="https://github.com/Maruquitus"
+            href="https://github.com/marcos-sousa-404"
             className="font-medium text-sm text-gray-800 dark:text-gray-100 my-auto flex hover:scale-105 duration-300 cursor-pointer"
           >
             <FontAwesomeIcon
@@ -100,20 +100,6 @@ export default function Home() {
               <li>
                 🌐 Me identifico principalmente com desenvolvimento Web e
                 Mobile.
-              </li>
-              <li>
-                🔭 Desenvolvedor do projeto ganhador da etapa regional da Crede
-                9 no Ceará Científico 2023 que utiliza aprendizado de máquina,
-                React Native, AWS e Python, CorrAut. Design de interfaces e
-                front-end do site por{" "}
-                <a
-                  className="font-semibold"
-                  target="_blank"
-                  href="https://github.com/GuilhermePain"
-                >
-                  @GuilhermePain
-                </a>
-                .
               </li>
               <li>✉️ Email para contato: marcospauloda.s.s@gmail.com.</li>
             </ul>
