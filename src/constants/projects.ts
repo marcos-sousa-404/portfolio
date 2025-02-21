@@ -15,16 +15,8 @@ import {
 
 export default [
   {
-    icon: faPython,
-    title: "CorrAut - 2022",
-    description:
-      "Criação de um sistema desktop para a correção automática de gabaritos baseado no método da Cascata de Haar. Projeto vencedor da área de TICs da XIII feira de ciências e cultura da EEEP Edson Queiroz.",
-    tags: ["Python", "OpenCV", "Pillow", "PyQt6"],
-    githubName: "CorrAut-Antigo",
-  },
-  {
     icon: faClipboardCheck,
-    title: "CorrAut - 2023",
+    title: "CorrAut",
     linkedInURL:
       "https://www.linkedin.com/posts/marcos-sousa-39aaa6262_fala-rede-passando-para-apresentar-o-activity-7216497386196484096-oWKm",
     description:
