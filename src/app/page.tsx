@@ -81,7 +81,7 @@ export default function Home() {
             className="rounded-full mx-auto sm:ml-8 mb-4 object-cover aspect-square sm:my-auto h-56 sm:h-72 shadow-lg shadow-[#9993]"
             src="foto.jpg"
           />
-          <div className="mx-auto sm:ml-4">
+          <div className="mx-auto sm:ml-4 w-full">
             <div className="w-10/12 sm:w-full mx-8 sm:ml-0">
               <Badge>Sobre mim 🧐</Badge>
             </div>
@@ -100,6 +100,15 @@ export default function Home() {
               <li>
                 🌐 Me identifico principalmente com desenvolvimento Web e
                 Mobile.
+              </li>
+              <li>
+                🍃 Estagiário na{" "}
+                <strong>
+                  <a target="_blank" href="https://delfos.energy">
+                    Delfos Energy
+                  </a>
+                </strong>
+                .
               </li>
               <li>✉️ Email para contato: marcospauloda.s.s@gmail.com.</li>
             </ul>
