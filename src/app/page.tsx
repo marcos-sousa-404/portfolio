@@ -102,7 +102,7 @@ export default function Home() {
                 Mobile.
               </li>
               <li>
-                ♾️ Desenvolvedor front-end na
+                🚀 Desenvolvedor front-end na {" "}
                 <strong>
                   <a target="_blank" href="https://www.infinitysolutionsapp.com/">
                     Infinity Solutions
