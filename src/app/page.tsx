@@ -102,10 +102,10 @@ export default function Home() {
                 Mobile.
               </li>
               <li>
-                🍃 Estagiário na{" "}
+                ♾️ Desenvolvedor front-end na
                 <strong>
-                  <a target="_blank" href="https://delfos.energy">
-                    Delfos Energy
+                  <a target="_blank" href="https://www.infinitysolutionsapp.com/">
+                    Infinity Solutions
                   </a>
                 </strong>
                 .
